@@ -1,62 +1,100 @@
-body {
-  font-family: Arial, sans-serif;
+/* General reset */
+* {
   margin: 0;
   padding: 0;
-  background: #fdfdfd;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
   color: #333;
+  line-height: 1.6;
   text-align: center;
 }
 
-nav {
+/* Navigation bar */
+header {
   background: #222;
   padding: 10px 0;
 }
 
 nav ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: center;
+  gap: 20px;
 }
 
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
-  color: #fff;
+nav a {
+  color: white;
   text-decoration: none;
   font-weight: bold;
 }
 
-nav ul li a:hover {
+nav a:hover,
+nav a.active {
   color: #ff9800;
 }
 
-header {
-  padding: 30px;
+/* Hero section (Home) */
+.hero {
+  margin: 60px auto;
 }
 
-.profile-pic {
+.profile-img {
   width: 180px;
-  height: 220px;   /* oval shape */
-  border-radius: 50%;
+  height: 220px;
   object-fit: cover;
-  display: block;
-  margin: 20px auto;
+  border-radius: 50% / 40%;
   border: 3px solid #333;
+  margin-bottom: 20px;
 }
 
-section {
-  padding: 20px;
+.hero h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* About section */
+.about {
   max-width: 800px;
-  margin: auto;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: left;
+  font-size: 1.1rem;
+  line-height: 1.8;
 }
 
+.about h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ff9800;
+}
+
+.about p {
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.about .highlight {
+  color: #ff9800;
+  font-weight: bold;
+}
+
+/* Footer */
 footer {
+  margin-top: 40px;
+  padding: 10px;
   background: #222;
-  color: #fff;
-  padding: 10px 0;
-  margin-top: 30px;
+  color: white;
 }
